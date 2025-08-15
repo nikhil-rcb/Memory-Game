@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Card Matching Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="game-header">
+    <div>Moves: <span id="moves">0</span></div>
+    <div>Time: <span id="timer">0</span> s</div>
+    <button id="restart-btn">Restart</button>
+  </div>
+
+  <div class="game-container"></div>
+
+  <div id="win-screen" class="hidden">
+    <h2>🎉 You Win! 🎉</h2>
+    <p>Time: <span id="final-time"></span></p>
+    <p>Moves: <span id="final-moves"></span></p>
+    <button id="play-again-btn">Play Again</button>
+  </div>
+
+  <assets>
+  <audio id="music-bg" src="assets/music.mp3" loop></audio>
+  <audio id="flip-sound" src="assets/flip.mp3"></audio>
+  <audio id="match-sound" src="assets/match.mp3"></audio>
+  <audio id="win-sound" src="assets/win.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
